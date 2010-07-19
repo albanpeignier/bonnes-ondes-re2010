@@ -1,0 +1,65 @@
+/* CSS Document */
+
+ul#sec-menu li{
+margin-right:1px;
+}
+
+/************************************************
+==> MENU 1
+************************************************/
+
+ul#main-menu li.item1 a{ background:url(../images/menu-fr/accueil.jpg) top left no-repeat; width:74px;}
+ul#main-menu li.item55 a{ background:url(../images/menu-fr/programme.jpg) top left no-repeat; width:99px;}
+ul#main-menu li.item56 a{ background:url(../images/menu-fr/pratique.jpg) top left no-repeat; width:81px;}
+ul#main-menu li.item57 a{ background:url(../images/menu-fr/tickets.jpg) top left no-repeat; width:73px;}
+ul#main-menu li.item58 a{ background:url(../images/menu-fr/engagement.jpg) top left no-repeat; width:126px;}
+ul#main-menu li.item59 a{ background:url(../images/menu-fr/galerie.jpg) top left no-repeat; width:74px;}
+ul#main-menu li.item60 a{ background:url(../images/menu-fr/les-a-cotes.jpg) top left no-repeat; width:90px;}
+
+ul#main-menu li a:hover,ul#main-menu li.active a{
+background-position:0 -53px;
+}
+
+/************************************************
+==> MENU 2
+************************************************/
+
+ul#sec-menu li.item61 a{ background:url(../images/menu-fr/ailleurs.jpg) top left no-repeat; width:120px;}
+ul#sec-menu li.item62 a{ background:url(../images/menu-fr/blog.jpg) top left no-repeat; width:52px;}
+
+ul#sec-menu li a:hover,ul#sec-menu li.active a{
+background-position:0 -53px;
+}
+
+/************************************************
+==> BANNER
+************************************************/
+
+#banner{
+background:url(../images/banner-fr.png) top left no-repeat;
+}
+
+/************************************************
+==> TICKETS
+************************************************/
+
+div#res-tickets a.res{
+background:url(../images/tickets-fr.jpg) top left no-repeat;
+}
+
+/************************************************
+==> BLOG
+************************************************/
+
+div#blog a.blog-link{
+background:url(../images/blog-fr.jpg) top left no-repeat;
+}
+
+
+/************************************************
+==> PROGRAMMATION
+************************************************/
+
+div#prog #prog-middle h3{
+background:url(../images/programmation2010.jpg) top left no-repeat;
+} 

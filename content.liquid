@@ -1,37 +1,12 @@
 <html dir="ltr">
  <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="radio, esperanzah, esperanzah!, festival, musique, floreffe, namur, belgique" />
-  <meta name="description" content="La radio du festival Esperanzah! - le 5, 6, 7 et 8 août 2010" />
-  <title>En direct - Radio Esperanzah! 2010</title>
-  <link href="http://www.esperanzah.be/templates/esp2010/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/template.css" type="text/css" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/position.css" type="text/css" media="screen,projection" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/layout.css" type="text/css" media="screen,projection" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/print.css" type="text/css" media="Print" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/general.css" type="text/css" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/fr-fr.css" type="text/css" />
-  <link rel="alternate" type="application/rss+xml" title="{{show.name}}" href="{{ show.url_for_podcast }}" />
-  <!--[if lte IE 6]>
-	 <link href="http://www.esperanzah.be/templates/esp2010/css/ieonly.css" rel="stylesheet" type="text/css" />
-   <style type="text/css">h1,a,div { behavior: url("http://www.esperanzah.be/templates/esp2010/iepngfix/iepngfix.htc");</style>
-	<![endif]-->
-  <!--[if IE 7]>
-	 <link href="http://www.esperanzah.be/templates/esp2010/css/ie7only.css" rel="stylesheet" type="text/css" />
-	<![endif]-->
-  <!--[if IE 8]> 
-   <link href="http://www.esperanzah.be/templates/esp2010/css/ie8only.css" rel="stylesheet" type="text/css" />
-  <![endif]-->
+   {% include 're2010/head' %}
+   <title>Ecouter {{content.episode.title}} - Radio Esperanzah! 2010</title>
  </head>
  <body>
   <div id="banner-top">
    <div id="banner-top-box">
-    <div id="social-networks">
-     <p>Retrouvez Radio Esperanzah! sur</p>
-     <ul>
-      <li><a href="http://www.facebook.com/RadioEsperanzah" target="_blank" id="facebook" title="Facebook" rel="nofollow">Facebook</a></li>
-     </ul>
-    </div>
+    {% include 're2010/social_networks' %}
    </div>
   </div>
   <div id="global">

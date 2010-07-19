@@ -1,0 +1,640 @@
+/**
+ * @version $Id: position.css 10387 2008-06-03 10:59:16Z pasamio $
+ * @author Design & Accessible Team ( Angie Radtke / Robert Deutz )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background:#652413 url(../images/background.jpg) center 43px no-repeat;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+
+/* ################   Position ################  */
+
+/************************************************
+==> BANNER TOP
+************************************************/
+
+#banner-top{
+background:url(../images/background-flag.png) top left repeat-x;
+height:66px;
+}
+
+#banner-top-box{
+position:relative;
+width:955px;
+margin:auto;
+padding-top:16px;
+}
+
+#banner-top-box ul{
+list-style-type:none;
+}
+
+#banner-top-box #social-networks ul{
+float:left;
+}
+
+#banner-top-box ul li{
+display:block;
+float:left;
+}
+
+#banner-top-box p{
+float:left;
+color:#666;
+font-size:11px;
+margin:0;
+padding:3px 0 0 0;
+}
+
+/* social networks */
+
+#banner-top-box ul li a#facebook, #banner-top-box ul li a#twitter{
+display:block;
+height:18px;
+width:18px;
+margin-left:6px;
+text-indent:-9999px;
+}
+
+#banner-top-box ul li a#facebook{ background:url(../images/facebook.ico.jpg) top left no-repeat;}
+#banner-top-box ul li a#twitter{ background:url(../images/twitter.ico.jpg) top left no-repeat;}
+
+#banner-top-box #social-networks ul li a:hover{
+background-position:0 -18px;
+}
+
+/* menu lang */
+
+#banner-top-box ul.jflanguageselection{
+float:right;
+}
+
+#banner-top-box ul.jflanguageselection li{
+margin:3px 0 0 6px;
+}
+
+#banner-top-box ul.jflanguageselection li a{
+color:#666;
+text-transform:uppercase;
+text-decoration:none;
+font-size:11px;
+}
+
+#banner-top-box ul.jflanguageselection li a:hover, #banner-top-box ul.jflanguageselection li#active_language a{
+color:#ccc;
+}
+
+/* cheveux poupee */
+
+#banner-top-box div#poupee-cheveux{
+position:absolute;
+top:13px;
+right:111px;
+background:url(../images/poupee-cheveux.jpg) top left no-repeat;
+width:161px;
+height:30px;
+}
+
+/************************************************
+==> BANNER
+************************************************/
+
+#banner{
+position:relative;
+top:-23px;
+margin:auto;
+width:955px;
+height:211px;
+overflow:hidden;
+}
+
+h1#logo a{
+position:absolute;
+top:35px;
+left:0;
+width:480px;
+height:100px;
+display:block;
+text-indent:-9999px;
+}
+
+#banner a#radio{
+position:absolute;
+top:100px;
+right:0;
+width:130px;
+height:60px;
+display:block;
+text-indent:-9999px;
+}
+
+
+/************************************************
+==> GLOBAL
+************************************************/
+
+#global{
+
+}
+
+/************************************************
+==> BOX
+************************************************/
+
+#box{
+position:relative;
+top:-34px;
+background:url(../images/page-top.png) top left no-repeat;
+width:955px;
+margin:auto;
+}
+
+/* sax poupee*/
+#box #poupee-sax{
+position:absolute;
+top:10px;
+right:196px;
+background:url(../images/poupee-sax.png) top left no-repeat;
+width:145px;
+height:78px;
+}
+
+/* bras poupee*/
+#box #poupee-bras{
+position:absolute;
+top:10px;
+right:90px;
+background:url(../images/poupee-bras.png) top left no-repeat;
+width:86px;
+height:30px;
+}
+
+/* menu left & menu right */
+#box div#menu-left,#box div#menu-right{
+position:absolute;
+width:18px;
+height:53px;
+}
+
+#box div#menu-left{
+background:url(../images/menu-left.png) top left no-repeat;
+top:32px;
+left:-18px;
+}
+
+#box div#menu-right{
+background:url(../images/menu-right.png) top left no-repeat;
+top:32px;
+right:-18px;
+}
+
+/* feuille */
+#box div#feuille{
+position:absolute;
+top:-6px;
+left:-16px;
+background:url(../images/feuille.png) top left no-repeat;
+width:38px;
+height:37px;
+}
+
+/************************************************
+==> BREADCRUMB
+************************************************/
+
+#breadcrumb{
+font-size:10px;
+padding:18px 0 0 12px;
+margin:0;
+text-align:left;
+overflow:hidden;
+}
+
+#breadcrumb p {
+float:left;
+display:inline;
+color:#d2611e;
+margin:0;
+}
+
+#breadcrumb a {
+text-transform:none;
+}
+
+#breadcrumb a:link,#breadcrumb a:visited {
+color:#333;
+text-decoration:underline
+}
+
+#breadcrumb span {
+color:#333;
+font-size:10px;
+}
+
+#breadcrumb span a:hover,#breadcrumb span a:active,#breadcrumb span a:focus {
+color:#333;
+text-decoration:none;
+}
+
+/************************************************
+==> MENU
+************************************************/
+
+ul#main-menu{
+list-style-type:none;
+background:url(../images/menu-background.jpg) top left repeat-x;
+padding:0 0 0 12px;
+height:53px;
+}
+
+ul#main-menu li{
+position:relative;
+display:block;
+float:left;
+margin-right:1px;
+}
+
+ul#main-menu li a{
+display:block;
+height:53px;
+text-indent:-9999px;
+}
+
+/************************************************
+==> MENU 2
+************************************************/
+
+ul#sec-menu{
+position:absolute;
+top:20px;
+right:68px;
+list-style-type:none;
+margin:12px 0 0 0;
+height:53px;
+}
+
+ul#sec-menu li{
+position:relative;
+display:block;
+float:left;
+}
+
+ul#sec-menu li a{
+display:block;
+height:53px;
+text-indent:-9999px;
+}
+
+
+/************************************************
+==> SS MENU 
+************************************************/
+
+#menu ul li ul{
+background:transparent url(../images/background-ss-menu.png) top left repeat;
+border-bottom:4px solid #333;
+position:absolute;
+top:47px;
+left:0;
+margin:1px 0 0 0;
+padding:0;
+width:180px;
+overflow:hidden;
+padding:6px 0;
+z-index:500;
+}
+
+#menu ul li ul li{
+background:none;
+float:none;
+height:auto;
+padding:0;
+}
+
+#menu ul#main-menu li ul li a,
+#menu ul#sec-menu li ul li a{
+background:none;
+width:100%;
+font-size:12px;
+text-transform:lowercase;
+text-decoration:none;
+color:#fff;
+height:auto;
+padding:6px 10px;
+text-align:left;
+text-indent:0;
+}
+
+#menu ul#main-menu li ul li a:hover, #menu ul#main-menu li ul li#current,
+#menu ul#sec-menu li ul li a:hover, #menu ul#sec-menu li ul li#current{
+background:#d2611e;
+margin-right:0;
+}
+
+
+/************************************************
+==> CONTENT
+************************************************/
+
+#content{
+background:#f3ebe0;
+min-height:300px;
+width:955px;
+margin:0;
+padding:0;
+}
+
+/************************************************
+==> PARTNERS
+************************************************/
+
+#partners{
+position:relative;
+background:url(../images/partners.jpg) top left no-repeat;
+display:block;
+margin:auto;
+width:955px;
+height:133px;
+text-indent:-9999px;
+}
+
+/************************************************
+==> FOOTER MENU
+************************************************/
+
+div#footer-menu{
+text-align:center;
+margin:40px 0 0 0;
+padding:0 0 10px 0;
+}
+
+div#footer-menu a{
+color:#333;
+text-decoration:none;
+font-size:11px;
+}
+
+div#footer-menu a:hover{
+text-decoration:underline;
+}
+
+/************************************************
+==> FOOTER
+************************************************/
+
+#footer{
+position:relative;
+top:-30px;
+width:955px;
+margin:auto;
+}
+
+#footer p, #footer a{
+color:#ae644e;
+font-size:11px;
+text-align:center;
+text-decoration: none;
+}
+
+/************************************************
+==> TICKETS
+************************************************/
+
+div#res-tickets{
+position:relative;
+text-indent:-9999px;
+}
+
+div#res-tickets a.res{
+display:block;
+width:256px;
+height:90px;
+}
+
+div#res-tickets a.tickets{
+position:absolute;
+top:-10px;
+right:-20px;
+display:block;
+background:url(../images/tickets-abs.png) top left no-repeat;
+width:115px;
+height:73px;
+}
+
+/************************************************
+==> BLOG
+************************************************/
+
+div#blog{
+position:relative;
+text-indent:-9999px;
+}
+
+div#blog a.blog-link{
+display:block;
+width:256px;
+height:90px;
+}
+
+div#blog a.blog-abs{
+position:absolute;
+bottom:-40px;
+right:-40px;
+display:block;
+background:url(../images/blog-abs.png) top left no-repeat;
+width:115px;
+height:73px;
+}
+
+
+
+/************************************************
+==> CONTENT JOOMLA
+************************************************/
+
+#contentarea,#contentarea2
+{
+	border: solid 0px #000;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+#wrapper { margin: 0}
+#left
+{
+	border-right: solid 0px #EEEEEE;
+	float: left;
+	margin: 20px 0 0 0;
+	width: 21%;
+}
+
+#right
+{
+	float:right;
+	width: 255px;
+	padding-top:12px;
+	margin:14px 24px 0 0;
+}
+
+#main2
+{
+	width:623px;
+	margin:0;
+	padding: 12px 0 12px 12px;
+	position: relative;
+	min-height:520px;
+	float:left;
+	text-align:left;
+}
+
+#main
+{
+	margin: 0;
+	padding: 12px 0 12px 12px;
+	position: relative;
+}
+
+#page{
+margin-left:12px;
+width:623px;
+}
+
+/* ###################### generell ###################### */
+.unsichtbar,.u2,.invisible , .unseen
+{
+	display: inline;
+	height: 0px;
+	left: -3000px;
+	position: absolute;
+	top: -2000px;
+	width: 0px;
+	z-index: 200;
+}
+
+.wrap
+{
+	border: 0;
+	clear: both;
+	float: none;
+	font-size: 1px;
+	height: 0;
+	line-height: 1px;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+
+/* ###############  main * ########################### */
+/* position */
+.leading
+{
+	background: #EFDEEA url(../images/biene.gif) no-repeat top left;
+	border: solid 1px #CCCCCC;
+	color: #000000;
+	margin: 30px 0px 10px 0px;
+	padding: 20px 20px 40px 120px;
+	position: relative;
+}
+
+.leading_separator
+{
+	border-bottom: solid 0px #333333;
+	display: block;
+	height: 10px;
+	margin: 0 0 0px 0;
+}
+
+.article_separator
+{
+	border: solid 1px #333333;
+	display: none;
+	margin: 0px 0 0px 0;
+}
+
+.blog { padding: 0; }
+
+.cols1
+{
+	display: block;
+	float: none !important;
+	margin: 0 !important;
+}
+
+.cols2 { width: 45%; }
+.cols3 { width: 30%; }
+
+.column1 , .column2
+{
+	border: solid 0px #D4A7C5;
+	margin: 0 5px 0 0;
+	position: relative;
+}
+
+.column2 , .column1
+{
+	float: left;
+	margin: 0;
+}
+
+.column2
+{
+	float: right;
+	margin: 0;
+	width: 45%;
+}
+
+.article_row
+{
+	margin:0 0 0 12px;
+	padding: 0;
+	overflow: hidden;
+	border-bottom:1px dotted #333;
+}
+
+.article_column
+{
+	border: solid 0px #ccc;
+	padding: 10px 0;
+}
+
+.row_separator2
+{
+	display: block;
+	clear: both;
+	margin: 0;
+	border: solid 0px;
+}
+
+#content p {
+  font-size: 14px;
+}
+
+#content #main2 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#content #main2 h1 {
+  margin-left: 0;
+}

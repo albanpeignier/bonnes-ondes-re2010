@@ -1,50 +1,17 @@
 <html dir="ltr">
  <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="radio, esperanzah, esperanzah!, festival, musique, floreffe, namur, belgique" />
-  <meta name="description" content="La radio du festival Esperanzah! - le 5, 6, 7 et 8 août 2010" />
-  <title>{{ episode.title }} - Radio Esperanzah! 2010</title>
-  <link href="http://www.esperanzah.be/templates/esp2010/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/template.css" type="text/css" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/position.css" type="text/css" media="screen,projection" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/layout.css" type="text/css" media="screen,projection" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/print.css" type="text/css" media="Print" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/general.css" type="text/css" />
-  <link rel="stylesheet" href="http://www.esperanzah.be/templates/esp2010/css/fr-fr.css" type="text/css" />
-  <link rel="alternate" type="application/rss+xml" title="{{show.name}}" href="{{ show.url_for_podcast }}" />
-  {{ theme.javascript_include_tag }}
-  <!--[if lte IE 6]>
-	 <link href="http://www.esperanzah.be/templates/esp2010/css/ieonly.css" rel="stylesheet" type="text/css" />
-   <style type="text/css">h1,a,div { behavior: url("http://www.esperanzah.be/templates/esp2010/iepngfix/iepngfix.htc");</style>
-	<![endif]-->
-  <!--[if IE 7]>
-	 <link href="http://www.esperanzah.be/templates/esp2010/css/ie7only.css" rel="stylesheet" type="text/css" />
-	<![endif]-->
-  <!--[if IE 8]> 
-   <link href="http://www.esperanzah.be/templates/esp2010/css/ie8only.css" rel="stylesheet" type="text/css" />
-  <![endif]-->
+   {% include 're2010/head' %}
+   <title>{{ episode.title }} - Radio Esperanzah! 2010</title>
  </head>
  <body>
-  <div id="banner-top">
-   <div id="banner-top-box">
-    <div id="social-networks">
-     <p>Retrouvez Radio Esperanzah! sur</p>
-     <ul>
-      <li><a href="http://www.facebook.com/RadioEsperanzah" target="_blank" id="facebook" title="Facebook" rel="nofollow">Facebook</a></li>
-     </ul>
-    </div>
-    <div id="poupee-cheveux"></div>
-   </div>
-  </div>
-  <div id="banner">
-   <h1 id="logo"><a href="http://www.esperanzah.be" title="Homepage" rel="nofollow">Radio Esperanzah!</a></h1>
-   <a href="/" id="radio">Esperanzah! World Music Festival</a>
-  </div>
+  {% include 're2010/header' %}
   <div id="global">
    <div id="box">
     <div id="breadcrumb">
      <p>Où suis-je ?
-      <span class="breadcrumbs pathway">{{ episode.title }}</span>
+       <span class="breadcrumbs pathway">
+         <a href="{{ show.url_for }}" class="pathway">Radio Esperanzah!</a> - {{ episode.title }}
+       </span>
      </p>
     </div>
     <div id="menu">
@@ -98,9 +65,6 @@
    </div>
    <div id="partners">Partenaires du festival Esperanzah! 2010</div>
   </div>
-  <div id="footer">
-   <p>&copy; 2010 - <strong>Esperanzah!</strong> World Music Festival</p>
-   <p><a href="http://pixfactory.be/creation-site-internet-web.php">Cr&eacute;ation site Internet</a>  : <a href="http://www.pixfactory.be">Pixfactory</a></p>
-  </div>
+  {% include 're2010/footer' %}
  </body>
 </html>
