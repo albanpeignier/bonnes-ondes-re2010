@@ -3,7 +3,7 @@
    {% include 're2010/head' %}
    <title>{{ episode.title }} - Radio Esperanzah! 2010</title>
  </head>
- <body>
+ <body class="episode">
   {% include 're2010/header' %}
   <div id="global">
    <div id="box">
@@ -17,7 +17,7 @@
     <div id="menu">
      <ul id="main-menu">
       <li class="item1">
-       <a href="http://www.esperanzah.be"><span>Accueil</span></a>
+       <a href="{{ show.url_for }}"><span>Accueil</span></a>
       </li>
      </ul>
     </div>
@@ -26,16 +26,18 @@
       <div id="wrapper">
        <div id="main2">
         <h1 class="componentheading">{{ episode.title }}</h1>
+        <div class="description">
         {{ episode.image.tag }}
         {{ episode.description|textilize }}
+        </div>
         <div id="listen">
       {% unless episode.contents == empty %}
  	     <h3>Ecoutez</h3>
    	   {% for content in episode.contents %}
 	      <div class="audio" id="audio-{{forloop.index}}">
-	       <h4><a href="{{content.url_for}}" onclick="window.open('{{content.url_for}}','bonnes-ondes-{{content.id}}','height=300,width=800');return false;">{{content.name}}</a></h4>
+	       <h4><a href="{{content.url_for}}" onclick="window.open('{{content.url_for}}','bonnes-ondes-{{content.id}}','height=300,width=750');return false;">{{content.name}}</a></h4>
 	       {% if content.duration %}
-          <p class="duration">{{content.duration}} minutes</p>
+          <p class="duration">Durée: {{content.duration}} minutes</p>
          {% endif %}
 	      </div>
 	     {% endfor %}
@@ -63,7 +65,7 @@
     <div id="menu-right"></div>
     <div id="feuille"></div>
    </div>
-   <div id="partners">Partenaires du festival Esperanzah! 2010</div>
+   <div id="partners"></div>
   </div>
   {% include 're2010/footer' %}
  </body>

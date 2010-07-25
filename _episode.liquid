@@ -1,9 +1,9 @@
-<div class="article_row">
- <div class="article_column column1 cols1" >
-  <h2 class="contentheading">{{ episode.title }}</h2>
-  {{ episode.description|textilize|strip_tags|truncate:400 }}
-  <p><a href="{{ episode.url_for }}" class="readon"> Lire la suite : {{ episode.title }}</a></p>
- </div>
- <span class="article_separator">&nbsp;</span>
- <span class="row_separator">&nbsp;</span>
+<h2>{{ episode.title }}</h2>
+<div class="episode preview">
+ {{ episode.image.tag_for_thumb}}
+ <p>
+ {{ episode.description|textilize|strip_tags|truncate:400 }}
+ </p>
+ <p><a href="{{ episode.url_for }}"> Lire la suite : {{ episode.title }}</a><p>
 </div>
+

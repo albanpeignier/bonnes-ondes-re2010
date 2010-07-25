@@ -3,7 +3,7 @@
    {% include 're2010/head' %}
    <title>Radio Esperanzah! 2010</title>
  </head>
- <body>
+ <body class="show">
   {% include 're2010/header' %}
   <div id="global">
    <div id="box">
@@ -23,13 +23,13 @@
      <div id="contentarea2"><a name="content"></a>
       <div id="wrapper">
        <div id="main2">
-        <h1 class="componentheading">{{ show.name }}</h1>
-        <p>{{ show.description | textilize }}</p>
-        <div class="blog">
-         {% for episode in show.broadcasted_episodes limit:7 %}
-          {% include 're2010/episode' %}
-			   {% endfor %}
-			  </div>
+        <h1>{{ show.name }}</h1>
+        {{ show.description | textilize }}
+
+        <h1>Ecoutez</h1>
+        {% for episode in show.broadcasted_episodes limit:7 %}
+        {% include 're2010/episode' %}
+			  {% endfor %}
 			 </div>
       </div>
      <div id="right">

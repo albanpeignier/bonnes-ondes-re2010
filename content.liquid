@@ -3,35 +3,22 @@
    {% include 're2010/head' %}
    <title>Ecouter {{content.episode.title}} - Radio Esperanzah! 2010</title>
  </head>
- <body>
-  <div id="banner-top">
-   <div id="banner-top-box">
-    {% include 're2010/social_networks' %}
-   </div>
-  </div>
-  <div id="global">
-   <div id="box">
-    <div id="breadcrumb">&nbsp;</div>
-    <div id="content">
-     <div id="contentarea2"><a name="content"></a>
-      <div id="wrapper">
-       <div id="main2">
-        <h1 class="componentheading">{{content.episode.title}}</h1>
-        {{content.episode.description | textilize | strip_tags | truncate :400}}
-        <div class="player" id="page">
-         {{content.episode.image.tag_for_thumb}}
-         <h3>{{content.name}}</h3>
-         {% if content.available? %}
-          {{ content.embedded_player }}
-          <p class="broadcast"><a href="{{content.url_for_playlist}}" title="Ecoutez avec votre lecteur audio préféré">Ecoutez avec votre lecteur audio préféré &#8594;</a></p>
-         {% else %}
-          <p>Ce contenu n'est plus disponible pour <a href="http://blog.tryphon.org/alban/archives/2009/02/25/radio-esperanzah-2008-fin-de-mise-en-ligne/">des raisons de droits sur les illustrations musicales.</a></p> 
-         {% endif %}
-        </div>
-			 </div>
-      </div>
-    </div>
-   </div>
-  </div>
+ <body class="content">
+   <div id="content">
+     <h1>Ecoutez - {{content.episode.title}} - {{content.name}}</h1>
+     <div class="description">
+       {{content.episode.image.tag_for_thumb}}
+       {{content.episode.description | textilize | strip_tags | truncate :400}}
+     </div>
+     <div class="player" id="page">
+       <h3>{{content.name}}</h3>
+       {% if content.available? %}
+       {{ content.embedded_player_started }}
+       <p class="broadcast"><a href="{{content.url_for_playlist}}" title="Ecoutez avec votre lecteur audio préféré">Ecoutez avec votre lecteur audio préféré &#8594;</a></p>
+       {% else %}
+       <p>Ce contenu n'est plus disponible pour <a href="http://blog.tryphon.org/alban/archives/2009/02/25/radio-esperanzah-2008-fin-de-mise-en-ligne/">des raisons de droits sur les illustrations musicales.</a></p> 
+       {% endif %}
+     </div>
+	 </div>
  </body>
 </html>
