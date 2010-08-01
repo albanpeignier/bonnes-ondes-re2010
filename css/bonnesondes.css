@@ -86,3 +86,25 @@ h1 {
 .play-selection {
     text-align: right;
 }
+
+#program {
+    clear:both;
+}
+
+#program .day {
+    float:left;
+    width:23%;
+    margin:0 6px;
+}
+#program li {
+    display:block;
+    margin:4px 0;
+    line-height:1.4em;
+    list-style-type:none;
+}
+
+#program span {
+    font-size:10px;
+    font-weight:bold;
+    padding:3px;
+}

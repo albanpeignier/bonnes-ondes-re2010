@@ -1,46 +1,28 @@
-<div id="page">
- <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-   <tr style="background-color: #666666;">
-    <td colspan="8"><span style="color: #f3ebe0;"><strong>Le programme</strong></span></td>
-   </tr>
-   <tr>
-   <td colspan="2" style="width: 25%;">
-    <h3>Jeudi 5 août</h3>
-   </td>
-   <td colspan="2" style="width: 25%;">
-    <h3>Vendredi 6 août</h3>
-   </td>
-   <td colspan="2" style="width: 25%;">
-    <h3>Samedi 7 août</h3>
-   </td>
-   <td colspan="2" style="width: 25%;">
-    <h3>Dimanche 8 août</h3>
-   </td>
-  </tr>
-  {% for episode in show.tag.jeudi reversed %}
-   <tr valign="top">
-    <td style="width: 5%;"><span style="font-size: 8pt;">{{ episode.broadcasted_at|date:'%H:%M' }}</span></td>
-    <td style="width: 25%;"><strong><a href="{{ episode.url_for }}">{{ episode.title }}</a></strong></td>
-    {% for episode in show.tag.vendredi reversed %}
-     <td style="width: 5%;"><span style="font-size: 8pt;">{{ episode.broadcasted_at|date:'%H:%M' }}</span></td>
-     <td style="width: 25%;"><strong><a href="{{ episode.url_for }}">{{ episode.title }}</a></strong></td>
-    {% endfor %}
-   </tr>
+<div id="program">
+ {% unless show.tag.jeudi == empty %}
+  <ul class="day">
+  <h3>Jeudi 5 août</h3>
+   {% for episode in show.tag.jeudi reversed %}
+    <li><span>{{ episode.broadcasted_at|date:'%H:%M' }}</span><a href="{{ episode.url_for }}">{{ episode.title | truncate: 30 }}</a></li> 
    {% endfor %}
-   <tr>
-   <td colspan="2" style="width: 25%;">
-    <a href="/tags/jeudi?format=m3u">&#8594; Ecouter tout le jeudi</a>
-   </td>
-   <td colspan="2" style="width: 25%;">
-    <a href="/tags/jeudi?format=m3u">&#8594; Ecouter tout le vendredi</a>
-   </td>
-   <td colspan="2" style="width: 25%;">
-    <a href="/tags/jeudi?format=m3u">&#8594; Ecouter tout le samedi</a>
-   </td>
-   <td colspan="2" style="width: 25%;">
-    <a href="/tags/jeudi?format=m3u">&#8594; Ecouter tout le dimanche</a>
-   </td>
-  </tbody>
- </table>
+  </ul>
+  <ul class="day">
+  <h3>Vendredi 6 août</h3>
+   {% for episode in show.tag.vendredi reversed %}
+    <li><span>{{ episode.broadcasted_at|date:'%H:%M' }}</span><a href="{{ episode.url_for }}">{{ episode.title | truncate: 30 }}</a></li> 
+   {% endfor %}
+  </ul>
+  <ul class="day">
+  <h3>Samedi 7 août</h3>
+   {% for episode in show.tag.samedi reversed %}
+    <li><span>{{ episode.broadcasted_at|date:'%H:%M' }}</span><a href="{{ episode.url_for }}">{{ episode.title | truncate: 30 }}</a></li> 
+   {% endfor %}
+  </ul>
+  <ul class="day">
+  <h3>Dimanche 8 août</h3>
+   {% for episode in show.tag.dimanche reversed %}
+    <li><span>{{ episode.broadcasted_at|date:'%H:%M' }}</span><a href="{{ episode.url_for }}">{{ episode.title | truncate: 30 }}</a></li> 
+   {% endfor %}
+  </ul>
+ {% endunless %}
 </div>
