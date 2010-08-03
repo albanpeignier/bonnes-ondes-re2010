@@ -14,7 +14,7 @@ a:link, a:visited, #main a:link, #main2 a:link, #main a:visited, #main2 a:visite
 }
 
 .episode .audio {
-    background: url("../media/play.png") 50% left no-repeat;
+    background: url("../media/play.png") no-repeat;
     padding-left: 40px;
 }
 
