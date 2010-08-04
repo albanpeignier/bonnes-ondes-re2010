@@ -108,3 +108,7 @@ h1 {
     font-weight:bold;
     padding:3px;
 }
+
+#prog #prog-middle p {
+    margin: 0px 0px 0px 4px;
+}
