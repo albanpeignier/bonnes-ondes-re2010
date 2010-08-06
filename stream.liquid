@@ -15,7 +15,11 @@
         <h1 class="componentheading">Radio Esperanzah! en direct</h1>
         <div class="player" id="page">
          <h3>La radio du festival en direct</h3>
-         <embed flashvars="file=http://stream.tryphon.org/live.mp3&autostart=true" height="20" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/flash/mediaplayer.swf" type="application/x-shockwave-flash" width="385" />
+         <audio controls="controls" autoplay="true">
+           <source src="http://stream.tryphon.org:8000/live.mp3"/>
+           <source src="http://stream.tryphon.org:8000/live.ogg"/>
+           <embed flashvars="file=http://stream.tryphon.org/live.mp3&autostart=true" height="20" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/flash/mediaplayer.swf" type="application/x-shockwave-flash" width="385" />
+         </audio>
          <p class="broadcast">
           Ecoutez avec votre lecteur audio préféré
           <a href="http://stream.tryphon.org/live.ogg.m3u">au format ogg</a> ou <a href="http://stream.tryphon.org/live.mp3.m3u">au format mp3</a>
