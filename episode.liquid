@@ -28,7 +28,7 @@
         <h1 class="componentheading">{{ episode.title }}</h1>
         <div class="description">
         {{ episode.image.tag }}
-        {{ episode.description|textilize }}
+        {{ episode.html_description }}
         </div>
         <div id="listen">
       {% unless episode.contents == empty %}
