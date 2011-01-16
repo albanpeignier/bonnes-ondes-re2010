@@ -1,4 +1,16 @@
 <div class="moduletable">
+ <div id="prog">
+  <div id="prog-top"></div>
+  <div id="prog-middle">
+   <p>
+    <a href="{{ show.url_for_podcast }}">Suivez la radio grâce au podcast !</a>
+   </p>
+  </div>
+  <div id="prog-bottom"></div>
+  <div id="prog-deco"></div>
+ </div>
+</div>
+<div class="moduletable">
  <h3>Mots-clés</h3>
  <ul class="list">
   {% for tag in show.tags limit:15 %}

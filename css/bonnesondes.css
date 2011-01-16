@@ -101,10 +101,15 @@ h1 {
     margin:4px 0;
     line-height:1.4em;
     list-style-type:none;
+    text-align: left;
 }
 
 #program span {
     font-size:10px;
     font-weight:bold;
     padding:3px;
+}
+
+#prog #prog-middle p {
+    margin: 0px 0px 0px 4px !important;
 }
