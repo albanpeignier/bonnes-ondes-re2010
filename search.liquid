@@ -1,10 +1,10 @@
 <html dir="ltr">
  <head>
-   {% include 're2010/head' %}
+   {% include 'head' %}
    <title>{{ search|capitalize }} - Radio Esperanzah! 2010</title>
  </head>
  <body class="search">
-   {% include 're2010/header' %}
+   {% include 'header' %}
    <div id="global">
    <div id="box">
     <div id="breadcrumb">
@@ -28,14 +28,14 @@
         <h1 class="componentheading">Toutes les émissions étiquetées : ‘{{ search }}’</h1>
         <div class="blog">
          {% for episode in episodes %}
-          {% include 're2010/episode' %}
+          {% include 'episode' %}
          {% endfor %}
          <p class="play-selection"><a href="/tags/{{search}}?format=m3u">&#8594; Ecouter cette sélection d'émissions</a></p>
         </div>
        </div>
       </div>
      <div id="right">
-      {% include 're2010/sidebar' %}
+      {% include 'sidebar' %}
      </div>
     </div>
     <div id="poupee-sax"></div>
@@ -46,6 +46,6 @@
    </div>
    <div id="partners"></div>
   </div>
-  {% include 're2010/footer' %}
+  {% include 'footer' %}
  </body>
 </html>
